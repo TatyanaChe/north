@@ -83,6 +83,7 @@ public class MyTest {
 			.clickButtonRun()
 			.clickButtonSure();
 		Assert.assertFalse("Последняя запись " + randomTitle + " не удалена.", adminBlogEntryPage.verifyTitleIsPresent(randomTitle));
+		System.out.println("Test finished successfuly");
 		Thread.sleep(3000);
 	}
 
